@@ -5,7 +5,7 @@ WORKDIR /app
 
 ADD ./example /app
 
-RUN apk add --update nginx redis nodejs npm yarn supervisor \
+RUN apk add --update nginx nodejs npm yarn supervisor \
     && rm  -rf /tmp/* /var/cache/apk/* \
     && mkdir -p /data/nginx/cache/nextjs
 
